@@ -65,7 +65,7 @@ const Services = () => {
           console.log(error.text);
       });
 
-      fetch('http://localhost:5000/orders',{
+      fetch('https://emty-server.vercel.app/orders',{
           method: 'POST',
           headers:{
               'content-type': 'application/json',

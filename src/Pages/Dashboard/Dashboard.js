@@ -8,7 +8,7 @@ const Dashboard = () => {
         fetchProduct(user?.email);
       }, [user]);
     async function fetchProduct(email) {
-        const url = `http://localhost:5000/allEmail?email=${email}`;
+        const url = `https://emty-server.vercel.app/allEmail?email=${email}`;
       
         try {
           const response = await fetch(url);
